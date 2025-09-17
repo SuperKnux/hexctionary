@@ -1,0 +1,8 @@
+{
+  hexdoc: {
+    hexctionary: {
+      title: "Hexctionary Book",
+      description: "An addon for Hex Casting, providing easier ways to auto-craft and perform nested crafting.",
+    },
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "id": "hexctionary",
+  "version": "${version}",
+  "name": "Hexctionary",
+  "description": "An addon for Hex Casting, providing easier ways to auto-craft and perform nested crafting.",
+  "authors": [
+    "SuperKnux"
+  ],
+  "contact": {
+    "homepage": "https://superknux.github.io/hexctionary",
+    "sources": "https://github.com/SuperKnux/hexctionary"
+  },
+  "license": "MIT",
+  "icon": "assets/hexctionary/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [{
+      "adapter": "kotlin",
+      "value": "deer.ski.hexctionary.fabric.FabricHexctionary"
+    }],
+    "client": [{
+      "adapter": "kotlin",
+      "value": "deer.ski.hexctionary.fabric.FabricHexctionaryClient"
+    }],
+    "modmenu": [{
+      "adapter": "kotlin",
+      "value": "deer.ski.hexctionary.fabric.FabricHexctionaryModMenu"
+    }]
+  },
+  "mixins": [
+    "hexctionary-common.mixins.json",
+    "hexctionary-fabric.mixins.json"
+  ],
+  "depends": {
+    "minecraft": "${versions.minecraft}",
+    "fabricloader": ">=${versions.fabric_loader}",
+    "fabric-api": ">=${versions.fabric_api}",
+    "fabric-language-kotlin": ">=${versions.kotlin_fabric}",
+    "architectury": ">=${versions.architectury}",
+    "hexcasting": ">=${versions.hexcasting_dependency}",
+    "cloth-config": ">=${versions.clothConfig}"
+  },
+  "suggests": {
+    "modmenu": ">=${versions.modMenu}"
+  }
+}
