@@ -28,6 +28,8 @@ forge-dependency = "47" # for mods.toml
 
 # 0.11.2-pre-701 corresponds to the build of 0.11.2 on CurseForge/Modrinth
 hexcasting = "0.11.2-pre-701"
+hexpose = "1.0.0"
+moreiotas = "0.1.0-7"
 # FIXME: this should be 0.11.2, but that breaks the dev environment
 hexcasting-dependency = "0.11.1"
 paucal = "0.6.0-pre-118"
@@ -45,6 +47,7 @@ mixinExtras = "0.4.1"
 clothConfig = "11.1.106"
 modMenu = "7.1.0"
 inline = "1.20.1-1.0.1"
+emi = "1.1.22+1.20.1"
 
 caelus = "3.1.0+1.20"
 
@@ -79,6 +82,8 @@ hexcasting-common = { module="at.petra-k.hexcasting:hexcasting-common-1.20.1", v
 hexcasting-fabric = { module="at.petra-k.hexcasting:hexcasting-fabric-1.20.1", version.ref="hexcasting" }
 hexcasting-forge  = { module="at.petra-k.hexcasting:hexcasting-forge-1.20.1", version.ref="hexcasting" }
 
+hexpose = { module="miyucomics.hexpose:hexpose", version.ref="hexpose"}
+
 paucal-common = { module="at.petra-k.paucal:paucal-common-1.20.1", version.ref="paucal" }
 paucal-fabric = { module="at.petra-k.paucal:paucal-fabric-1.20.1", version.ref="paucal" }
 paucal-forge  = { module="at.petra-k.paucal:paucal-forge-1.20.1", version.ref="paucal" }
@@ -102,8 +107,13 @@ clothConfig-forge  = { module="me.shedaniel.cloth:cloth-config-forge", version.r
 
 caelus = { module="top.theillusivec4.caelus:caelus-forge", version.ref="caelus" }
 
+inline-common = { module="com.samsthenerd.inline:inline-common", version.ref="inline" }
 inline-fabric = { module="com.samsthenerd.inline:inline-fabric", version.ref="inline" }
 inline-forge  = { module="com.samsthenerd.inline:inline-forge", version.ref="inline" }
+
+emi-xplat = { module="dev.emi:emi-xplat-intermediary", version.ref="emi"}
+emi-fabric = { module="dev.emi:emi-fabric", version.ref="emi"}
+emi-forge = { module="dev.emi:emi-forge", version.ref="emi"}
 
 asm          = { module="org.ow2.asm:asm", version.ref="asm" }
 asm-analysis = { module="org.ow2.asm:asm-analysis", version.ref="asm" }
@@ -113,6 +123,8 @@ asm-util     = { module="org.ow2.asm:asm-util", version.ref="asm" }
 
 
 serializationHooks = { module="libs:serialization-hooks", version.ref="serializationHooks" }
+moreiotas-fabric = { module="libs:moreiotas-fabric-1.20.1", version.ref="moreiotas"}
+moreiotas-forge = { module="libs:moreiotas-forge-1.20.1", version.ref="moreiotas"}
 
 [plugins]
 kotlin-jvm = { id="org.jetbrains.kotlin.jvm", version.ref="kotlin" }

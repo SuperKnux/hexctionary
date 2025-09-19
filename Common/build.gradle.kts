@@ -16,6 +16,8 @@ dependencies {
     modApi(libs.architectury)
 
     modApi(libs.hexcasting.common)
+    modApi(libs.inline.common)
+    modApi(libs.emi.xplat)
 
     modApi(libs.clothConfig.common)
 

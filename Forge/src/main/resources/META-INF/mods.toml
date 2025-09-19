@@ -44,3 +44,10 @@ mandatory = true
 versionRange = "[${versions.hexcasting_dependency},)"
 ordering = "NONE"
 side = "BOTH"
+
+[[dependencies.hexctionary]]
+modId = "emi"
+mandatory = true
+versionRange = "[${versions.emi},)"
+ordering = "NONE"
+side = "BOTH"

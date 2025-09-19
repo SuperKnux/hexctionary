@@ -60,6 +60,7 @@ dependencies {
     implementation(libs.kotlin.forge)
 
     modApi(libs.hexcasting.forge) { isTransitive = false }
+    modApi(libs.moreiotas.forge)
     // Hex Casting dependencies
     // we use modLocalRuntime to add these to the development runtime, but not at compile time or for consumers of this project
     // but we use PAUCAL for datagen, so that's part of the actual implementation
@@ -67,6 +68,7 @@ dependencies {
     modLocalRuntime(libs.patchouli.forge)
     modLocalRuntime(libs.caelus)
     modLocalRuntime(libs.inline.forge) { isTransitive = false }
+    modLocalRuntime(libs.emi.forge)
 
     modApi(libs.clothConfig.forge)
 

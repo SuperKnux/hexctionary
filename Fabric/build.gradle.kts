@@ -45,6 +45,8 @@ dependencies {
         // If not excluded here, calls a nonexistent method and crashes the dev client
         exclude(module = "phosphor")
     }
+    modApi(libs.moreiotas.fabric)
+    modApi(libs.hexpose)
     // Hex Casting dependencies
     // we use modLocalRuntime to add these to the development runtime, but not at compile time or for consumers of this project
     modLocalRuntime(libs.paucal.fabric)
@@ -53,6 +55,7 @@ dependencies {
     modLocalRuntime(libs.serializationHooks)
     modLocalRuntime(libs.trinkets)
     modLocalRuntime(libs.inline.fabric) { isTransitive = false }
+    modLocalRuntime(libs.emi.fabric)
 
     libs.mixinExtras.fabric.also {
         localRuntime(it)
